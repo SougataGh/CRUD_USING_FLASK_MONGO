@@ -14,16 +14,16 @@ Before setting up the application, ensure you have the following installed on yo
 - MongoDB (local or cloud-based, e.g., MongoDB Atlas)
 - Git
 ## Setup and Installation
-1. Clone the Repository :
+### 1. Clone the Repository :
 ```bash
 git clone https://github.com/your-username/flask-mongo-crud.git
 cd flask-mongo-crud
 ```
-2. Setup MongoDB :
+### 2. Setup MongoDB :
 - Ensure MongoDB is running locally or configure a connection string for a cloud MongoDB instance.
 - Update the MONGO_URI in app/config.py if necessary.
 
-3. Run Using Docker :
+### 3. Run Using Docker :
 - Build the Docker image:
 ```bash
 docker build -t flask-mongo-crud .
@@ -34,7 +34,7 @@ docker run -p 5000:5000 flask-mongo-crud
 ```
 - The app will be available at http://localhost:5000.
 ## REST API Endpoints
-1. Get All Users :
+### 1. Get All Users :
 - Endpoint: GET /users
 - Description: Retrieves all users from the database.
 - Response: JSON array of users.
@@ -49,12 +49,12 @@ docker run -p 5000:5000 flask-mongo-crud
 ]
 ```
 
-2. Get a User by ID :
+### 2. Get a User by ID :
 - Endpoint: GET /users/<id>
 - Description: Retrieves a single user by ID.
 - Response: JSON object of the user.
 
-3. Create a New User :
+### 3. Create a New User :
 Endpoint: POST /users
 Description: Adds a new user to the database.
 Request Body:
@@ -65,12 +65,12 @@ Request Body:
   "password": "hashed_password"
 }
 ```
-4. Update a User :
+### 4. Update a User :
 - Endpoint: PUT /users/<id>
 - Description: Updates an existing user's details.
 - Request Body: Provide any fields to update.
 
-5.Delete a User :
+### 5.Delete a User :
 - Endpoint: DELETE /users/<id>
 - Description: Deletes a user from the database.
 
