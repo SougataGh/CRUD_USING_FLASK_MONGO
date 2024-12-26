@@ -70,7 +70,7 @@ Request Body:
 - Description: Updates an existing user's details.
 - Request Body: Provide any fields to update.
 
-### 5.Delete a User :
+### 5. Delete a User :
 - Endpoint: DELETE /users/<id>
 - Description: Deletes a user from the database.
 
