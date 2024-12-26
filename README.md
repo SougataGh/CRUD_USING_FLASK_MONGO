@@ -27,8 +27,10 @@ cd flask-mongo-crud
 - Build the Docker image:
 ```bash
 docker build -t flask-mongo-crud .
+```
 - Start the container:
 ```bash
 docker run -p 5000:5000 flask-mongo-crud
+```
 - The app will be available at http://localhost:5000.
 ## REST API Endpoints
