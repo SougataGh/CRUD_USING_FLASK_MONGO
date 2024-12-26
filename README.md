@@ -60,8 +60,8 @@ Description: Adds a new user to the database.
 Request Body:
 ```json
 {
-  "name": "John Doe",
-  "email": "john.doe@example.com",
+  "name": "Sougata Ghosh",
+  "email": "ghoshsougataa@gmail.com",
   "password": "hashed_password"
 }
 ```
