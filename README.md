@@ -76,15 +76,18 @@ Request Body:
 
 ## File Structure
 ```bash
-flask-mongo-crud/
+flask_mongo_crud/
 │
-├── app_factory.py          # Entry point for the application
 ├── app/
-│   ├── __init__.py         # Package initialization
-│   ├── config.py           # Configuration file
-│   ├── user_routes.py      # User-related routes
+│   ├── __init__.py
+│   ├── config.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── services.py
+│   └── exceptions.py
 │
-├── requirements.txt        # Python dependencies
-├── Dockerfile              # Docker container instructions
-├── README.md               # Project documentation
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
