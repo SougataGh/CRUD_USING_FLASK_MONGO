@@ -34,3 +34,57 @@ docker run -p 5000:5000 flask-mongo-crud
 ```
 - The app will be available at http://localhost:5000.
 ## REST API Endpoints
+1. Get All Users :
+- Endpoint: GET /users
+- Description: Retrieves all users from the database.
+- Response: JSON array of users.
+```json
+[
+  {
+    "id": "64b7e63e5d3a2b1ec1f57f01",
+    "name": "Sougata Ghosh",
+    "email": "ghoshsougataa@example.com",
+    "password": "hashed_password"
+  }
+]
+```
+
+2. Get a User by ID :
+- Endpoint: GET /users/<id>
+- Description: Retrieves a single user by ID.
+- Response: JSON object of the user.
+
+3. Create a New User :
+Endpoint: POST /users
+Description: Adds a new user to the database.
+Request Body:
+```json
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "password": "hashed_password"
+}
+```
+4. Update a User :
+- Endpoint: PUT /users/<id>
+- Description: Updates an existing user's details.
+- Request Body: Provide any fields to update.
+
+5.Delete a User :
+- Endpoint: DELETE /users/<id>
+- Description: Deletes a user from the database.
+
+## File Structure
+```bash
+flask-mongo-crud/
+│
+├── app_factory.py          # Entry point for the application
+├── app/
+│   ├── __init__.py         # Package initialization
+│   ├── config.py           # Configuration file
+│   ├── user_routes.py      # User-related routes
+│
+├── requirements.txt        # Python dependencies
+├── Dockerfile              # Docker container instructions
+├── README.md               # Project documentation
+```
