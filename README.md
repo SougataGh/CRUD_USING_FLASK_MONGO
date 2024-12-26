@@ -18,7 +18,7 @@ Before setting up the application, ensure you have the following installed on yo
 ```bash
 git clone https://github.com/your-username/flask-mongo-crud.git
 cd flask-mongo-crud
-
+```bash
 2. Setup MongoDB :
 - Ensure MongoDB is running locally or configure a connection string for a cloud MongoDB instance.
 - Update the MONGO_URI in app/config.py if necessary.
